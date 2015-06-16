@@ -107,6 +107,17 @@ TOPT = -mthumb -DTHUMB -mlittle-endian -Os
 LDSCR = $(PROJ_BASE)/CMSIS\Device/ST/STM32F3xx/Source/Templates/gcc/linker/STM32F373XC_FLASH.ld
 LDFLAGS = -Wl,--gc-sections,-Map,$(OUTPUT)/$(PROJECT).map
 
+
+all:  $(HALOBJ) $(STARTOBJ) $(COBJ) $(CFGOBJ)
+	@echo Linking..
+	@echo Using linker script $(notdir $(LDSCR))
+	@$(LD) $(TOPT) $(UDEFS) -mcpu=$(MCU) $(addprefix -T,$(LDSCR)) $(LDFLAGS) $(HALOBJ) $(CFGOBJ) $(STARTOBJ) $(COBJ) -o $(OUTPUT)/$(PROJECT).elf
+	$(CP) -Oihex $(OUTPUT)/$(PROJECT).elf $(OUTPUT)/$(PROJECT).hex
+	@echo GIT_HASH = $(GIT_HASH)
+	@echo 
+	@echo 
+	@echo Linking successful
+	
 # HAL driver sources
 $(HALOBJ): $(HAL_SRC_DIR)/%.o : $(HAL_SRC_DIR)/%.c
 	@echo Compiling HAL: $(notdir $@)
@@ -127,16 +138,6 @@ $(COBJ): $(PROJ_SRC_DIR)/%.o : $(PROJ_SRC_DIR)/%.c
 	@echo Compiling user Code: $(notdir $@)
 	@$(CC) $(TOPT) $(UDEFS) -mcpu=$(MCU) $(addprefix -I,$(HALINC)) $(addprefix -I,$(UINC)) -c $< -o $@
 
-
-all:  $(HALOBJ) $(STARTOBJ) $(COBJ) $(CFGOBJ)
-	@echo Linking..
-	@echo Using linker script $(notdir $(LDSCR))
-	@$(LD) $(TOPT) $(UDEFS) -mcpu=$(MCU) $(addprefix -T,$(LDSCR)) $(LDFLAGS) $(HALOBJ) $(CFGOBJ) $(STARTOBJ) $(COBJ) -o $(OUTPUT)/$(PROJECT).elf
-	$(CP) -Oihex $(OUTPUT)/$(PROJECT).elf $(OUTPUT)/$(PROJECT).hex
-	@echo GIT_HASH = $(GIT_HASH)
-	@echo 
-	@echo 
-	@echo Linking successful
 
 clean:
 	rm -f $(PROJ_SRC_DIR)/*.o
