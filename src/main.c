@@ -31,13 +31,12 @@ int main (void)
  {
 	/* Turn on the LED */
 	LED_ON();
-	test = 1000;
-	//while (test--);
+	test = 500000;
+	while (test--);
 	/* Turn on the LED */
 	LED_OFF();
-	test = 1000;
-	IWDG->KR = 0x0000AAAA;
-	//while (test--);
+	test = 500000;
+	while (test--);
  
 }
 }
