@@ -1,6 +1,12 @@
+cube/
+target/
+obj/
+dep/
 *.o
+*.d
 *.gch
 *.elf
 *.hex
+*.lst
 *.dfu
 *.map
