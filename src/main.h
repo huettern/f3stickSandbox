@@ -1,6 +1,6 @@
 /**
   ******************************************************************************
-  * @file    GPIO/GPIO_IOToggle/Inc/main.h
+  * @file    GPIO/GPIO_IOToggle/Inc/main.h 
   * @author  MCD Application Team
   * @version V1.0.0
   * @date    18-June-2014
@@ -34,7 +34,7 @@
   *
   ******************************************************************************
   */
-
+  
 /* Define to prevent recursive inclusion -------------------------------------*/
 #ifndef __MAIN_H
 #define __MAIN_H
