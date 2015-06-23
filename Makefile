@@ -184,16 +184,13 @@ program: all
 	$(OCD) -s $(OCD_DIR) $(OCDFLAGS) -c "program target/$(TARGET).elf verify reset"
 
 debug:
-	@if ! nc -z localhost 3333; then \
-		echo "\n\t[Error] OpenOCD is not running! Start it with: 'make openocd'\n"; exit 1; \
-	else \
-		$(GDB)  -ex "target extended localhost:3333" \
-			-ex "monitor arm semihosting enable" \
-			-ex "monitor reset halt" \
-			-ex "load" \
-			-ex "monitor reset init" \
-			$(GDBFLAGS) target/$(TARGET).elf; \
-	fi
+	$(OCD) -s $(OCD_DIR) $(OCDFLAGS) &
+	$(GDB)  -ex "target extended localhost:3333" \
+		-ex "monitor arm semihosting enable" \
+		-ex "monitor reset halt" \
+		-ex "load" \
+		-ex "monitor reset init" \
+		$(GDBFLAGS) target/$(TARGET).elf; \
 
 cube:
 	rm -fr $(CUBE_DIR)
