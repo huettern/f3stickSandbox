@@ -44,7 +44,6 @@ SRCS       = main.c
 # Your header file locations (add -I before path!)
 INCS       = -Isrc
 
-#OCDFLAGS   = -f board/stm32f3discovery.cfg
 #GDBFLAGS   = 
 
 # MCU family and type in various capitalizations
@@ -54,7 +53,11 @@ MCU_MC     = STM32F373xC
 MCU_UC     = STM32F373XC
 
 # Directories
-OCD_DIR    = /usr/share/openocd/scripts
+ifeq ($(OS),Windows_NT)
+	OCD_DIR     = C:/OpenOCD-0.8.0/share/openocd/scripts
+else
+	OCD_DIR		= /usr/share/openocd/scripts
+endif
 
 CUBE_DIR   = cube
 
@@ -79,7 +82,11 @@ OBJDUMP    = $(PREFIX)-objdump
 SIZE       = $(PREFIX)-size
 GDB        = $(PREFIX)-gdb
 
-OCD        = openocd
+ifeq ($(OS),Windows_NT)
+	OCD     = C:/OpenOCD-0.8.0/bin/openocd.exe
+else
+	OCD		= openocd
+endif
 
 ###############################################################################
 # Files
@@ -133,6 +140,8 @@ VPATH     += $(DEV_DIR)/Source/
 
 OBJS       = $(addprefix obj/,$(notdir $(SRCS:.c=.o)))
 DEPS       = $(addprefix dep/,$(notdir $(SRCS:.c=.d)))
+
+OCDFLAGS   = -f config/f3stick_openocd.cfg
 
 # Prettify output
 V = 0
