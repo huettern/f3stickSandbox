@@ -2,6 +2,7 @@ cube/
 target/
 obj/
 dep/
+.settings/
 *.o
 *.d
 *.gch
@@ -10,3 +11,5 @@ dep/
 *.lst
 *.dfu
 *.map
+.cproject
+.project
