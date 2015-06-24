@@ -152,7 +152,7 @@ endif
 
 ###################################################
 
-.PHONY: all dirs program debug clean
+.PHONY: all dirs program debug clean cleancube
 
 all: target/$(TARGET).elf
 
@@ -204,3 +204,22 @@ clean:
 	@echo "[RMDIR]   dep"          ; rm -fr dep
 	@echo "[RMDIR]   obj"          ; rm -fr obj
 	@echo "[RMDIR]   target"       ; rm -fr target
+
+cleancube:
+	rm -fr $(CUBE_DIR)/Utilities
+	rm -fr $(CUBE_DIR)/Projects
+	rm -fr $(CUBE_DIR)/Middlewares
+	rm -fr $(CUBE_DIR)/Drivers/BSP
+	rm -fr $(CUBE_DIR)/Drivers/CMSIS/Documentation
+	rm -fr $(CUBE_DIR)/Drivers/CMSIS/Device/ST/STM32F3xx/Source/Templates/arm
+	rm -fr $(CUBE_DIR)/Drivers/CMSIS/Device/ST/STM32F3xx/Source/Templates/iar
+	rm -fr $(CUBE_DIR)/Drivers/CMSIS/DSP_Lib
+	rm -fr $(CUBE_DIR)/Drivers/CMSIS/RTOS
+	rm -fr $(CUBE_DIR)/Drivers/CMSIS/SVD
+	rm -fr $(CUBE_DIR)/Drivers/CMSIS/Lib/GCC/libarm_cortexM4*
+	rm -fr $(CUBE_DIR)/Drivers/CMSIS/Lib/GCC/libarm_cortexM0*
+	rm -fr $(CUBE_DIR)/Drivers/CMSIS/Lib/G++/libarm_cortexM4*
+	rm -fr $(CUBE_DIR)/Drivers/CMSIS/Lib/G++/libarm_cortexM0*
+	rm -fr $(CUBE_DIR)/Drivers/CMSIS/Lib/ARM/arm_cortexM0*
+	rm -fr $(CUBE_DIR)/Drivers/CMSIS/Lib/ARM/arm_cortexM4*
+	
