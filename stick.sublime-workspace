@@ -1,0 +1,978 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Init",
+				"InitDAC"
+			],
+			[
+				"PROJ",
+				"PROJ_BASE"
+			],
+			[
+				"fLCD",
+				"fLCDBacklightOff"
+			],
+			[
+				"m_b",
+				"m_bBTNShiftReg"
+			],
+			[
+				"LCD_fD",
+				"LCD_fDrawMonoChar"
+			],
+			[
+				"LCD_DAA",
+				"LCD_DATA_Dir"
+			],
+			[
+				"LCD_fWr",
+				"LCD_fWriteData"
+			],
+			[
+				"LCD_DA",
+				"LCD_DATA_SIZE"
+			],
+			[
+				"m_lw",
+				"m_lwPowerOffCtr"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/H/stick/notes.txt",
+			"settings":
+			{
+				"buffer_size": 886,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Makefile",
+			"settings":
+			{
+				"buffer_size": 6434,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/main.c",
+			"settings":
+			{
+				"buffer_size": 6592,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/main.h",
+			"settings":
+			{
+				"buffer_size": 2709,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/dac.c",
+			"settings":
+			{
+				"buffer_size": 8789,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/dac.h",
+			"settings":
+			{
+				"buffer_size": 2037,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "cube/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dac.c",
+			"settings":
+			{
+				"buffer_size": 25183,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "cube/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dac.h",
+			"settings":
+			{
+				"buffer_size": 17297,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "cube/Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f373xc.h",
+			"settings":
+			{
+				"buffer_size": 488653,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "cube/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dac_ex.c",
+			"settings":
+			{
+				"buffer_size": 38417,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "cube/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h",
+			"settings":
+			{
+				"buffer_size": 66840,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "cube/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dac_ex.h",
+			"settings":
+			{
+				"buffer_size": 21043,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/Makefile/Make.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				]
+			],
+			[
+				"Packages/Makefile/Make.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"About"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/tmp/proj",
+		"/C/tmp/proj/config",
+		"/C/tmp/proj/cube",
+		"/C/tmp/proj/cube/Drivers",
+		"/C/tmp/proj/cube/Drivers/CMSIS/Device",
+		"/C/tmp/proj/cube/Drivers/CMSIS/Device/ST",
+		"/C/tmp/proj/cube/Drivers/CMSIS/Device/ST/STM32F3xx",
+		"/C/tmp/proj/cube/Drivers/CMSIS/Device/ST/STM32F3xx/Source/Templates",
+		"/C/tmp/proj/cube/Drivers/CMSIS/Device/ST/STM32F3xx/Source/Templates/gcc",
+		"/C/tmp/proj/cube/Drivers/STM32F3xx_HAL_Driver",
+		"/C/tmp/proj/cube/Drivers/STM32F3xx_HAL_Driver/Src",
+		"/C/tmp/proj/src"
+	],
+	"file_history":
+	[
+		"/C/tmp/proj/config/stm32f3xx_it.c",
+		"/C/tmp/proj/cube/Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f373xc.h",
+		"/C/tmp/proj/cube/Drivers/CMSIS/Device/ST/STM32F3xx/Source/Templates/gcc/startup_stm32f373xc.s",
+		"/C/tmp/proj/config/stm32f3xx_hal_conf.h",
+		"/C/tmp/proj/cube/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio_ex.h",
+		"/C/tmp/proj/cube/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_gpio.h",
+		"/C/tmp/proj/cube/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h",
+		"/C/tmp/proj/cube/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c",
+		"/C/tmp/proj/.gitignore",
+		"/C/tmp/proj/config/f3stick_openocd.cfg",
+		"/H/stick/OpenOCD-0.8.0/share/openocd/scripts/chip/st/stm32/stm32.tcl",
+		"/C/tmp/proj/Makefile",
+		"/N/Know How & Technologie/ARM/RasPi/Raspberry/Software/Bare-Metal/arm-tutorial-rpi-master/readme.md",
+		"/C/tmp/proj/src/main.c",
+		"/C/tmp/proj/config/system_stm32f3xx.c",
+		"/C/tmp/proj/config/stm32f3xx_it.h",
+		"/C/tmp/proj/target/stick.lst",
+		"/C/tmp/proj/target/stick.elf",
+		"/C/tmp/proj/target/stick.map",
+		"/C/tmp/proj/src/startup_stm32f373xc.s",
+		"/C/tmp/proj/dep/main.d",
+		"/H/stick/proj/Makefile",
+		"/H/stick/proj/Makefile_template",
+		"/H/stick/stm32f3-cube/src/main.c",
+		"/H/stick/stm32f3-cube/cube/Drivers/BSP/Components/Common/gyro.h",
+		"/H/stick/stm32f3-cube/cube/Drivers/BSP/Components/l3gd20/l3gd20.h",
+		"/H/stick/stm32f3-cube/cube/Drivers/BSP/Components/l3gd20/l3gd20.c",
+		"/H/stick/stm32f3-cube/cube/Drivers/BSP/STM32F3-Discovery/stm32f3_discovery_gyroscope.h",
+		"/H/stick/stm32f3-cube/Makefile",
+		"/H/stick/stm32f3-cube/cube/Drivers/BSP/STM32F3-Discovery/stm32f3_discovery_gyroscope.c",
+		"/H/stick/stm32f3-cube/dep/main.d",
+		"/H/stick/proj/config/stm32f3xx_hal_conf.h",
+		"/H/stick/notes.txt",
+		"/H/stick/proj/src/main.h",
+		"/H/stick/proj/src/main.c",
+		"/H/stick/proj/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c",
+		"/H/stick/proj/CMSIS/Device/ST/STM32F3xx/Source/Templates/gcc/startup_stm32f373xc.s",
+		"/H/stick/proj/.gitignore",
+		"/H/stick/proj/target/stick.map",
+		"/H/stick/proj/README.md",
+		"/H/stick/proj/Makefile_mytry",
+		"/C/tmp/Makefile",
+		"/H/stick/proj/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h",
+		"/H/stick/proj/src/test.c",
+		"/H/stick/proj/src/test.h",
+		"/H/stick/proj/target/stm32f3xx_hal_dac_ex.o",
+		"/H/stick/proj/tmp/main.c",
+		"/H/stick/proj/prog.map",
+		"/H/stick/proj/config/system_stm32f3xx.c",
+		"/H/stick/cube_f3/Projects/STM32373C_EVAL/Templates/TrueSTUDIO/STM32373C_EVAL/STM32F373VC_FLASH.ld",
+		"/H/stick/proj/CMSIS/Device/ST/STM32F3xx/Source/Templates/gcc/linker/STM32F373XC_FLASH.ld",
+		"/H/stick/proj/config/stm32f3xx.h",
+		"/C/MinGW/msys/1.0/etc/profile",
+		"/C/tmp/mintty.reg",
+		"/C/Users/MMEZNHU/workspaceRP/i2cscan/src/Makefile",
+		"/H/bsz_anzeige/.gitignore",
+		"/H/prod/4520/8124/allegro/netlist.log",
+		"/H/pcbenv/function_keys.scr",
+		"/C/Users/MMEZNHU/workspaceRP/i2cscan/Makefile",
+		"/C/Users/MMEZNHU/workspaceRP/i2cscan/README",
+		"/C/Users/MMEZNHU/workspaceRP/i2cscan/.gitignore",
+		"/C/Users/MMEZNHU/workspaceRP/i2cscan/install.sh",
+		"/N/Teams/Lernende/Arbeitsverzeichnis 8186 Huetter Noah/FONT0.C",
+		"/N/Teams/Lernende/Arbeitsverzeichnis 8186 Huetter Noah/FONT0.H",
+		"/H/bsz_anzeige/bin/Project.map",
+		"/X/GetprintWin.bat",
+		"/C/Users/MMEZNHU/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/MMEZNHU/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/H/bsz_anzeige/Sources/basetype.h",
+		"/H/prod/4520/8124/allegro/8999.brd",
+		"/H/prod/4520/8124/8124.opj",
+		"/H/prod/4520/8124/8124.olb",
+		"/H/prod/4520/8124/3063.dsn",
+		"/H/bsz_anzeige/prm/Project.prm",
+		"/C/tmp/rp/interfaces.ap",
+		"/C/Users/MMEZNHU/Downloads/acquire_on_trigger (1).m",
+		"/I/etc/network/interfaces.ap",
+		"/C/tmp/rp/wpa_supplicant.conf",
+		"/C/tmp/rp/orig/wpa_supplicant.conf",
+		"/C/tmp/rp/interfaces",
+		"/C/tmp/rp/orig/interfaces",
+		"/C/tmp/rp/orig/hostapd.conf",
+		"/C/tmp/rp/hostapd.conf",
+		"/C/tmp/rp/orig/dnsmasq.conf",
+		"/C/tmp/rp/dnsmasq.conf",
+		"/C/tmp/rp/config",
+		"/C/tmp/rp/orig/config",
+		"/C/tmp/rp/orig/interfaces.ap",
+		"/C/Users/MMEZNHU/ownCloud/Programming/STM32F373stick/sw/usbserial/HAL/Src/stm32f3xx_hal_sdadc.c",
+		"/C/Users/MMEZNHU/ownCloud/Programming/STM32F373stick/sw/usbserial/HAL/Src/stm32f3xx_hal_tim.c",
+		"/C/Users/MMEZNHU/Downloads/test/etc/network/interfaces",
+		"/C/Users/MMEZNHU/Downloads/test/etc/network/wpa_supplicant.conf",
+		"/C/Users/MMEZNHU/ownCloud/Programming/STM32F373stick/sw/usbserial/HAL/Inc/stm32f3xx_hal_tim.h",
+		"/C/Users/MMEZNHU/Downloads/ecosystem-0.92-57-d0e7263 (1)/etc/init.d/rcS",
+		"/C/Users/MMEZNHU/Downloads/test/etc/init.d/rcS",
+		"/C/Users/MMEZNHU/Downloads/ecosystem-0.92-57-d0e7263 (1)/etc/network/config",
+		"/C/Users/MMEZNHU/Downloads/ecosystem-0.92-57-d0e7263 (1)/etc/network/hostapd.conf",
+		"/C/Users/MMEZNHU/Downloads/ecosystem-0.92-57-d0e7263 (1)/etc/network/interfaces",
+		"/C/Users/MMEZNHU/Downloads/ecosystem-0.92-57-d0e7263 (1)/etc/network/wpa_supplicant.conf",
+		"/C/Users/MMEZNHU/Downloads/test/etc/network/config",
+		"/C/Users/MMEZNHU/Downloads/test/etc/network/interfaces.ap",
+		"/C/Users/MMEZNHU/Downloads/SDK-0.92-57-57-d0e7263/install.sh",
+		"/C/Users/MMEZNHU/Downloads/SDK-0.92-57-57-d0e7263/run.sh",
+		"/C/Users/MMEZNHU/ownCloud/Programming/STM32F373stick/sw/usbserial/Target 1.BAT",
+		"/C/Users/MMEZNHU/ownCloud/Programming/STM32F373stick/sw/usbserial/target/main.__i",
+		"/C/Users/MMEZNHU/ownCloud/Programming/STM32F373stick/sw/usbserial/usbserial_Target 1.dep",
+		"/C/Users/MMEZNHU/ownCloud/Programming/STM32F373stick/sw/usbserial/HAL/Src/stm32f3xx_hal_pcd_ex.c",
+		"/C/Users/MMEZNHU/ownCloud/Programming/STM32F373stick/sw/usbserial/HAL/Src/stm32f3xx_hal_pcd.c",
+		"/N/Teams/Lernende/Arbeitsverzeichnis 8186 Huetter Noah/main_AsirBoxLdrUsb/LIB_MMLDR/MMLDR.h",
+		"/N/Teams/Lernende/Arbeitsverzeichnis 8186 Huetter Noah/main_AsirBoxLdrUsb/LIB_MMLDR/MMLDR_CTRL.h",
+		"/N/Teams/Lernende/Arbeitsverzeichnis 8186 Huetter Noah/main_AsirBoxLdrUsb/LIB_MMLDR/MMLDR_DEF.h",
+		"/N/Teams/Lernende/Arbeitsverzeichnis 8186 Huetter Noah/main_AsirBoxLdrUsb/MAIN/stm32f3xx_it.c",
+		"/D/rp/etc/network/config",
+		"/C/Users/MMEZNHU/ownCloud/Programming/DFUFileConverter/DFUFileConverterLinux/libcintelhex/src/ihex_copy.c",
+		"/C/Users/MMEZNHU/ownCloud/Programming/DFUFileConverter/DFUFileConverterLinux/.gitmodules",
+		"/N/Teams/Lernende/Arbeitsverzeichnis 8186 Huetter Noah/Lehrlingsprojekte/RM_Test_14/8 SW-Projekt/RM_Testgerät - DBG2/Sources/state_machine.c",
+		"/N/Teams/Lernende/Arbeitsverzeichnis 8186 Huetter Noah/Lehrlingsprojekte/GCH1000/Software/GCH1000[4.6] 4542.1057.4/Sources/main.c",
+		"/C/Users/MMEZNHU/ownCloud/Programming/STM32F373stick/sw/cube/target/cube.hex",
+		"/C/Users/MMEZNHU/ownCloud/Programming/STM32F373stick/sw/doxy_template.c",
+		"/C/Users/MMEZNHU/Documents/tmp/compare/my.c",
+		"/C/Users/MMEZNHU/Downloads/forchris.cpp",
+		"/C/Users/MMEZNHU/Documents/tmp/compare/orig.c",
+		"/C/Users/MMEZNHU/Documents/hexhex/hexhex/font2.c",
+		"/C/Users/MMEZNHU/Documents/STM32Cube_FW_F3_V1.0.0/Projects/STM32373C_EVAL/Applications/USB_Device/HID_Standalone/readme.txt",
+		"/C/Users/MMEZNHU/Documents/STM32Cube_FW_F3_V1.0.0/Projects/STM32373C_EVAL/Applications/USB_Device/CDC_Standalone/readme.txt",
+		"/C/Users/MMEZNHU/ownCloud/Programming/STM32F373stick/sw/cube/user/main.c",
+		"/C/Users/MMEZNHU/Documents/STM32Cube_FW_F3_V1.0.0/Projects/STM32373C_EVAL/Examples/GPIO/GPIO_IOToggle/Src/main.c",
+		"/C/Users/MMEZNHU/Documents/STM32Cube_FW_F3_V1.0.0/Projects/STM32373C_EVAL/Examples/GPIO/GPIO_IOToggle/Inc/main.h"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"C:\\tmp\\proj\\cube\\Drivers\\STM32F3xx_HAL_Driver\\Inc",
+			"H:\\stick\\proj",
+			"C:\\Users\\MMEZNHU\\ownCloud\\Programming\\STM32F373stick\\sw\\usbserial",
+			"N:\\Teams\\Lernende\\Arbeitsverzeichnis 8186 Huetter Noah\\main_AsirBoxLdrUsb",
+			"C:\\Users\\MMEZNHU\\ownCloud\\Programming\\STM32F373stick\\sw\\usbserial",
+			"C:\\tmp\\CDC_Standalone",
+			"C:\\Program Files\\STMicroelectronics\\Software\\DfuSe\\Sources",
+			"C:\\Users\\MMEZNHU\\Documents\\STM32Cube_FW_F3_V1.0.0\\Projects\\STM32373C_EVAL\\Applications\\USB_Device\\HID_Standalone",
+			"C:\\Users\\MMEZNHU\\ownCloud\\Programming\\STM32F373stick\\sw\\cube",
+			"C:\\Users\\MMEZNHU\\Documents\\STM32Cube_FW_F3_V1.0.0",
+			"C:\\Users\\MMEZNHU\\Documents\\STM32Cube_FW_F3_V1.0.0\\Middlewares\\ST\\STM32_USB_Device_Library",
+			"C:\\Users\\MMEZNHU\\Elektronik\\Boards\\stm32f3-disco\\chibitest"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"0",
+			"\n ",
+			"\n\n",
+			",",
+			" ",
+			",",
+			"m_DAC_Buf",
+			"aEscalator8bit",
+			"hdma_dac1",
+			"HAL_SYSTICK_Config",
+			"HAL_InitTick",
+			"init",
+			"FLAG",
+			"TIM_FLAG",
+			"DAC_FLAG",
+			"DAC",
+			"Period",
+			"249",
+			"TIM6",
+			"nvic",
+			"TIM6",
+			"INT",
+			"TIM",
+			"TIM_ClockDivision",
+			"m_hTim6",
+			"htim",
+			"HAL_DAC_SetValue",
+			"DAC_CR_TSEL1",
+			"DAC_TRIGGER_NONE",
+			"__HAL_DAC_ENABLE",
+			"HAL_DAC_MspInit",
+			"HAL_DAC_Init",
+			"HAL_DAC_Start",
+			"HAL_DAC_ConfigChannel",
+			"trigger",
+			"DAC_output_buffer",
+			"DACEx_trigger_selection",
+			"DAC_ChannelConfTypeDef",
+			"HAL_DAC_ConfigChannel",
+			"HAL_LockTypeDef",
+			"State",
+			"m_dac1",
+			"HAL_DAC_Init",
+			"HAL_DAC_MspInit",
+			"DAC_HandleTypeDef",
+			"DAC",
+			"GPIOEx_Alternate_function_selection",
+			"CLK_ENABLE",
+			"Lib",
+			"\\",
+			"BSP",
+			"semihosting ",
+			"GDBFLAGS",
+			"GDB",
+			"\\",
+			"-f ",
+			"\\",
+			"target",
+			"STARTUP",
+			"STARTUP_FILE",
+			"startup",
+			"nvic",
+			"ld",
+			".l",
+			"hex",
+			"template",
+			"BSP",
+			"board",
+			"GYRO_IO_Write",
+			"GYRO_IO_Init",
+			"GYRO_IO_Read",
+			"BSP_DIR",
+			"board",
+			"BOARD",
+			"board",
+			"BOARD",
+			".ld",
+			"CUBE_DIR",
+			"DEPS",
+			"PROJ_SRC_DIR",
+			"GPIOA",
+			"USB",
+			"//",
+			"OUT",
+			"HALCSRC",
+			"$(OUTPUT)",
+			"$(OUTPUT)/",
+			"$(OUTPUT)",
+			"config",
+			"main",
+			"test",
+			"OUTPUT",
+			"main",
+			"lastword",
+			"\\",
+			"stm32f3xx_ll_fmc",
+			"al_nand",
+			"UINCDIR",
+			"bInputDataValid",
+			"bEventData",
+			"m_bTimeDataIndex",
+			"m_m_bTimeDataIndex",
+			"bTimeData",
+			"bTimeDataIndex",
+			"bBSZTimeout",
+			"bBSZReplied",
+			"m_lwLCDDimmCtr",
+			"fLCDBacklightOn",
+			"m_bFadeUp",
+			"m_bFadeDown",
+			"Events",
+			"LCD_FONT_TYPE_Arial",
+			"wCtr",
+			"bCtr",
+			"DO_IT",
+			"LCD_bArialFont",
+			"draw",
+			"{",
+			"bBallYMove",
+			"bBallXMove",
+			"3999",
+			"8999",
+			"PT",
+			"PTC",
+			"SCI_fSendByte",
+			"bUpdateLCD",
+			"wMSCounter",
+			"LCD_UPDATE_RATE"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\n",
+			"",
+			"LCD_FONT_TYPE_Mono",
+			"LCD_bMonoFont",
+			"3063",
+			"8124",
+			"LCD_nCD",
+			"LCD_nRST",
+			" {"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/H/stick/notes.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 886,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								734,
+								734
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Makefile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6434,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1464,
+								1464
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Makefile/Makefile.tmLanguage"
+						},
+						"translation.x": 304.0,
+						"translation.y": 702.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/main.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6592,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3851,
+								3851
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1134.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/main.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2709,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2262,
+								2275
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 108.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/dac.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8789,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7449,
+								7449
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3618.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/dac.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2037,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								987,
+								1006
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": -0.0,
+						"translation.y": 216.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 6,
+					"file": "cube/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dac.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 25183,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								21206,
+								21222
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 9821.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "cube/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dac.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 17297,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12506,
+								12505
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3953.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "cube/Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f373xc.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 488653,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								391850,
+								391850
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 224.0,
+						"translation.y": 87455.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "cube/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_dac_ex.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 38417,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								28761,
+								28761
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 14285.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "cube/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 66840,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								26305,
+								26313
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 64.0,
+						"translation.y": 9893.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "cube/Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dac_ex.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 21043,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2717,
+								2717
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 48.0,
+						"translation.y": 732.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.507970570202,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 228.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Makefile/Make.sublime-build",
+	"project": "stick.sublime-project",
+	"replace":
+	{
+		"height": 98.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 289.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

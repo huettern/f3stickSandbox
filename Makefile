@@ -39,7 +39,7 @@
 TARGET     = stick
 
 # Your C files from the /src directory
-SRCS       = main.c
+SRCS       = main.c dac.c
 
 # Your header file locations (add -I before path!)
 INCS       = -Isrc

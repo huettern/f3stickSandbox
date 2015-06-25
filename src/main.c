@@ -39,6 +39,8 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 
+#include "dac.h"
+
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -79,13 +81,14 @@ int main(void)
 	/* Configure GPIOB pin 5 in max speed */
 	GPIOB->OSPEEDR |= 3;
 
+  DAC_fInit();
 
   /* -3- Toggle PE.8 to PE.15 IOs in an infinite loop */  
   while (1)
   {
-    GPIOB->ODR ^= GPIO_PIN_0; //toggle pin
+    //GPIOB->ODR ^= GPIO_PIN_0; //toggle pin
     HAL_Delay(50);
-    GPIOB->ODR ^= GPIO_PIN_0; //toggle pin
+    //GPIOB->ODR ^= GPIO_PIN_0; //toggle pin
     HAL_Delay(450);
   }
 }
