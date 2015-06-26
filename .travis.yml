@@ -20,6 +20,7 @@ before_script:
 
 script:
   - echo $PATH
+  - /home/travis/gcc-arm-none-eabi-4_8-2014q3/bin/arm-none-eabi-gcc --version
   - arm-none-eabi-gcc --version
   - make cube
   - make all
