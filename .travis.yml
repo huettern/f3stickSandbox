@@ -9,6 +9,7 @@ before_script:
   - cd ~
   - wget https://launchpadlibrarian.net/186124160/gcc-arm-none-eabi-4_8-2014q3-20140805-linux.tar.bz2
   - tar -jxf gcc-arm-none-eabi-4_8-2014q3-20140805-linux.tar.bz2
+  - chmod -R +x gcc-arm-none-eabi-4_8-2014q3/bin/*
   - ls -al
   - pwd
   - ls gcc-arm-none-eabi-4_8-2014q3/
@@ -20,6 +21,7 @@ before_script:
 
 script:
   - echo $PATH
+  - ls -al /home/travis/gcc-arm-none-eabi-4_8-2014q3/bin/
   - /home/travis/gcc-arm-none-eabi-4_8-2014q3/bin/arm-none-eabi-gcc --version
   - arm-none-eabi-gcc --version
   - make cube
