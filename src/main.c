@@ -39,6 +39,8 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 
+#include <stdio.h>
+
 #include "dac.h"
 
 
@@ -49,6 +51,7 @@
 /* Private function prototypes -----------------------------------------------*/
 static void SystemClock_Config(void);
 static void Error_Handler(void);
+
 
 /* Private functions ---------------------------------------------------------*/
 
@@ -90,6 +93,7 @@ int main(void)
     HAL_Delay(50);
     //GPIOB->ODR ^= GPIO_PIN_0; //toggle pin
     HAL_Delay(450);
+    printf("Hello World!\r\n");
   }
 }
 
