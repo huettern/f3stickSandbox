@@ -1,5 +1,5 @@
 # STM32F3 template
-
+[![Build Status](https://travis-ci.org/noah95/f3stickSandbox.svg?branch=travis_build)](https://travis-ci.org/noah95/f3stickSandbox)
 
 ### Directory List
 
