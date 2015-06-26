@@ -45,6 +45,8 @@
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
 /* Private function prototypes -----------------------------------------------*/
+extern void initialise_monitor_handles(void); /* prototype for semihosting */
+
 static void SystemClock_Config(void);
 static void Error_Handler(void);
 
@@ -67,6 +69,7 @@ int main(void)
        - Set NVIC Group Priority to 4
        - Low Level Initialization
      */
+	initialise_monitor_handles(); /* initialize handles for semihosting */
   HAL_Init();
 
   /* Configure the system clock to 72 Mhz */
