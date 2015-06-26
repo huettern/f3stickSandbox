@@ -195,7 +195,7 @@ debug:
 cube:
 	rm -fr $(CUBE_DIR)
 	wget -O /tmp/cube.zip $(CUBE_URL)
-	unzip /tmp/cube.zip
+	unzip -q /tmp/cube.zip
 	mv STM32Cube* $(CUBE_DIR)
 	chmod -R u+w $(CUBE_DIR)
 	rm -f /tmp/cube.zip
