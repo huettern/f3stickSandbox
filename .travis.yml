@@ -3,7 +3,20 @@
 
 language: c
 
+# use travis-ci docker based infrastructure
+sudo: false
+
+cache:
+  directories:
+    - $HOME/.ccache
+
+addons:
+  apt:
+    packages:
+    - build-essential
+
 before_script:
+  - if [ "$CXX" = "g++" ]; then export CXX="g++-4.8" CC="gcc-4.8"; fi
 # General toolchain dependencies
   - pushd .
   - cd ~
