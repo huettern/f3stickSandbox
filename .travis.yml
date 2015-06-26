@@ -18,3 +18,4 @@ script:
   - arm-none-eabi-gcc --version
   - make cube
   - make all
+
