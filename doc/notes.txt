@@ -1,0 +1,72 @@
+### INSTALLATION UNDER WINDOWS
+
+1. Download and install GNU Tools for ARM Embedded Processors from here
+https://launchpad.net/gcc-arm-embedded/+download
+
+Add to PATH Variable
+
+2. Download and install MinGW
+http://sourceforge.net/projects/mingw/files/latest/download
+
+2.1 Install following packages
+msys-mintty, msys-vim, msys-openssh, msys-patch, msys-rsync, msys-wget, msys-base
+
+2.2 Add following to paths to the windows PATH variable
+C:\MinGW\msys\1.0\bin
+C:\MinGW\bin
+
+2.3 Create shortcut of C:\MinGW\msys\1.0\bin\mintty.exe on the Desktop and add following to the Path
+/bin/bash -l
+
+## Faster method for make under windows
+Need to check if above steps are stil necessary
+
+3. Install GNU make
+http://gnuwin32.sourceforge.net/packages/make.htm
+
+
+### Debugging with eclipse
+1. Download and install Eclipse CDT
+
+2.1 Add the following plugin-repo:
+Name: GNU ARM Eclipse Plug-ins
+Location: http://gnuarmeclipse.sourceforge.net/updates
+
+2.1 Install these two packages
+GNU ARM C/C++ J-Link Debugging
+GNU ARM C/C++ OpenOCD Debugging
+
+3. Create Project from existing Makefile
+
+3.1 File -> New -> Makefile Project with Existing Code
+
+3.2 Point to the Location of the makefile
+
+4. Build with Ctrl+B
+
+5. Add Debug configuration
+
+5.1 Run -> Debug Configurations...
+
+5.2 Add new GDB OpenOCD Debugging configuration
+
+5.3 Apply those Settings:
+
+5.3.1 Main
+C/C++ Application: <path to target/project.elf file>
+
+5.3.2 Debugger
+- Check Start OpenOCD locally
+- Executable: <path to openocd.exe>
+- GDB Port: 3333
+- Config options: -s <OpenOCDLocation>/share/openocd/scripts -f config/f3stick_openocd.cfg
+
+- GDB Client Setup, Executable: arm-none-eabi-gdb
+
+5.4 Click Apply & Debug
+
+
+
+Source: http://www.jann.cc/2013/10/10/embedded_development_with_open_source_tools_on_windows.html
+
+Source: https://github.com/stv0g/stm32cube-gcc/

@@ -1,0 +1,20 @@
+# Build and autotest script for f3stick sandbox
+# http://travis-ci.org
+
+language: c
+
+before_script:
+# General toolchain dependencies
+  - pushd .
+  - cd ~
+  - wget https://launchpadlibrarian.net/186124160/gcc-arm-none-eabi-4_8-2014q3-20140805-linux.tar.bz2
+  - tar -jxf gcc-arm-none-eabi-4_8-2014q3-20140805-linux.tar.bz2
+  - exportline="export PATH=$HOME/gcc-arm-none-eabi-4_8-2014q3/bin:\$PATH"
+  - if grep -Fxq "$exportline" ~/.profile; then echo nothing to do ; else echo $exportline >> ~/.profile; fi
+  - . ~/.profile
+  - popd
+
+script:
+  - arm-none-eabi-gcc --version
+  - make cube
+  - make all
