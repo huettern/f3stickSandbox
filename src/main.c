@@ -1,114 +1,114 @@
-/**
-  ******************************************************************************
-  * @file    GPIO/GPIO_IOToggle/Src/main.c 
-  * @author  MCD Application Team
-  * @version V1.0.0
-  * @date    18-June-2014
-  * @brief   This example describes how to configure and use GPIOs through 
-  *          the STM32F3xx HAL API.
-  ******************************************************************************
-  * @attention
-  *
-  * <h2><center>&copy; COPYRIGHT(c) 2014 STMicroelectronics</center></h2>
-  *
-  * Redistribution and use in source and binary forms, with or without modification,
-  * are permitted provided that the following conditions are met:
-  *   1. Redistributions of source code must retain the above copyright notice,
-  *      this list of conditions and the following disclaimer.
-  *   2. Redistributions in binary form must reproduce the above copyright notice,
-  *      this list of conditions and the following disclaimer in the documentation
-  *      and/or other materials provided with the distribution.
-  *   3. Neither the name of STMicroelectronics nor the names of its contributors
-  *      may be used to endorse or promote products derived from this software
-  *      without specific prior written permission.
-  *
-  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-  * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-  * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-  * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
-  * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-  * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-  * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-  * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
-  * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-  *
-  ******************************************************************************
-  */
-
-/* Includes ------------------------------------------------------------------*/
+/************************************************************************//**
+ * @file    main.c
+ * @author  Noah Huetter
+ * @version 
+ * @date    2015-07-01
+ * @brief   main
+ ****************************************************************************/
+ /*************************************************************************//*
+ * INCLUDE FILES
+ ****************************************************************************/
 #include "main.h"
 
 
-/* Private typedef -----------------------------------------------------------*/
-/* Private define ------------------------------------------------------------*/
-/* Private macro -------------------------------------------------------------*/
-/* Private variables ---------------------------------------------------------*/
-/* Private function prototypes -----------------------------------------------*/
-extern void initialise_monitor_handles(void); /* prototype for semihosting */
 
+/****************************************************************************
+ * MODULE NAME DEFINITONS
+ -----------------------------------------------------------------------*//**
+ * @brief  main
+ * @details 
+ *    
+ *************************************************************************//*
+ * STRUCTURE DEFINITONS
+ -----------------------------------------------------------------------*//**
+ * @addtogroup main
+ * @{
+ ****************************************************************************/
+/****************************************************************************
+ * PRIVATE SECTION (definitions and members are only visible locally)
+ -----------------------------------------------------------------------*//**
+ * @privatesection
+ ****************************************************************************/
+/****************************************************************************
+ * PRIVATE CONSTANT DEFINITIONS
+ ****************************************************************************/
+/** @cond *//* hide these definitions from document generator */
+
+
+
+/** @endcond */
+/****************************************************************************
+ * PRIVATE DATA TYPES
+ ****************************************************************************/
+/** @cond *//* hide these definitions from document generator */
+
+
+
+/** @endcond */
+/****************************************************************************
+ * PRIVATE FUNCTION PROTOTYPES (STATIC)
+ ****************************************************************************/
 static void SystemClock_Config(void);
 static void Error_Handler(void);
 
-/* Private functions ---------------------------------------------------------*/
 
-/**
-  * @brief  Main program
-  * @param  None
-  * @retval None
-  */
+/****************************************************************************
+ * PRIVATE DATA (STATIC)
+ ****************************************************************************/
+
+
+
+/****************************************************************************
+ * PRIVATE FUNCTIONS (STATIC)
+ ****************************************************************************/
+
+/*=======================================================================*//**
+  @brief   Main program
+  @details
+  @param 
+  @retval 
+*//*========================================================================*/
 int main(void)
 {
-  /* STM32F3xx HAL library initialization:
-       - Configure the Flash prefetch
-       - Systick timer is configured by default as source of time base, but user 
-         can eventually implement his proper time base source (a general purpose 
-         timer for example or other time source), keeping in mind that Time base 
-         duration should be kept 1ms since PPP_TIMEOUT_VALUEs are defined and 
-         handled in milliseconds basis.
-       - Set NVIC Group Priority to 4
-       - Low Level Initialization
-     */
-	initialise_monitor_handles(); /* initialize handles for semihosting */
   HAL_Init();
 
   /* Configure the system clock to 72 Mhz */
   SystemClock_Config();
 
-	/* Enbale GPIOB clock */
-	RCC->AHBENR |= RCC_AHBENR_GPIOBEN;
-	/* Configure GPIOB pin 5 as output */
-	GPIOB->MODER |= 0x01;
-	/* Configure GPIOB pin 5 in max speed */
-	GPIOB->OSPEEDR |= 3;
+  /* Enbale GPIOB clock */
+  RCC->AHBENR |= RCC_AHBENR_GPIOBEN;
+  /* Configure GPIOB pin 5 as output */
+  GPIOB->MODER |= 0x01;
+  /* Configure GPIOB pin 5 in max speed */
+  GPIOB->OSPEEDR |= 3;
 
-
-  /* -3- Toggle PE.8 to PE.15 IOs in an infinite loop */  
+  /* Toggle PB0 */  
   while (1)
   {
     GPIOB->ODR ^= GPIO_PIN_0; //toggle pin
-    HAL_Delay(50);
+    HAL_Delay (450);
     GPIOB->ODR ^= GPIO_PIN_0; //toggle pin
-    HAL_Delay(450);
+    HAL_Delay (450);
   }
 }
 
-/**
-  * @brief  System Clock Configuration
-  *         The system Clock is configured as follow : 
-  *            System Clock source            = PLL (HSE)
-  *            SYSCLK(Hz)                     = 72000000
-  *            HCLK(Hz)                       = 72000000
-  *            AHB Prescaler                  = 1
-  *            APB1 Prescaler                 = 2
-  *            APB2 Prescaler                 = 1
-  *            HSE Frequency(Hz)              = 8000000
-  *            HSE PREDIV                     = 1
-  *            PLLMUL                         = RCC_PLL_MUL9 (9)
-  *            Flash Latency(WS)              = 2
-  * @param  None
-  * @retval None
-  */
+/*=======================================================================*//**
+  @brief  System Clock Configuration
+          The system Clock is configured as follow : 
+             System Clock source            = PLL (HSE)
+             SYSCLK(Hz)                     = 72000000
+             HCLK(Hz)                       = 72000000
+             AHB Prescaler                  = 1
+             APB1 Prescaler                 = 2
+             APB2 Prescaler                 = 1
+             HSE Frequency(Hz)              = 8000000
+             HSE PREDIV                     = 1
+             PLLMUL                         = RCC_PLL_MUL9 (9)
+             Flash Latency(WS)              = 2
+  @details
+  @param 
+  @retval 
+*//*========================================================================*/
 static void SystemClock_Config(void)
 {
   RCC_ClkInitTypeDef RCC_ClkInitStruct;
@@ -139,11 +139,12 @@ static void SystemClock_Config(void)
   }
 }
 
-/**
-  * @brief  This function is executed in case of error occurrence.
-  * @param  None
-  * @retval None
-  */
+/*=======================================================================*//**
+  @brief   This function is executed in case of error occurrence.
+  @details
+  @param 
+  @retval 
+*//*========================================================================*/
 static void Error_Handler(void)
 {
   /* User may add here some code to deal with this error */
@@ -153,14 +154,14 @@ static void Error_Handler(void)
 }
 
 #ifdef  USE_FULL_ASSERT
-
-/**
-  * @brief  Reports the name of the source file and the source line number
-  *         where the assert_param error has occurred.
-  * @param  file: pointer to the source file name
-  * @param  line: assert_param error line source number
-  * @retval None
-  */
+/*=======================================================================*//**
+  @brief   Reports the name of the source file and the source line number
+           where the assert_param error has occurred.
+  @details
+  @param   file: pointer to the source file name
+  @param   line: assert_param error line source number
+  @retval  None
+*//*========================================================================*/
 void assert_failed(uint8_t* file, uint32_t line)
 { 
   /* User can add his own implementation to report the file name and line number,
@@ -173,4 +174,23 @@ void assert_failed(uint8_t* file, uint32_t line)
 }
 #endif
 
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+/****************************************************************************
+ * PRIVATE CALLBACK FUNCTIONS (STATIC)
+ ****************************************************************************/
+
+
+
+/****************************************************************************
+ * INTERRUPT SERVICE FUNCTIONS
+ ****************************************************************************/
+
+
+
+/****************************************************************************
+ * END OF COMPONENT STRUCTURE DEFINITONS
+ -----------------------------------------------------------------------*//**
+ * @}
+ ****************************************************************************/
+/****************************************************************************
+ * END OF FILE
+ ****************************************************************************/
