@@ -41,8 +41,22 @@ TARGET     = stick
 # Your C files from the /src directory
 SRCS       = main.c
 
+# Sourcefiles for USB CDC
+SRCS      += usb_user/usbd_conf.c		\
+			 usb_user/usbd_desc.c 		\
+			 usb_user/USBD_CDC_IF.c     \
+			 LIB_STM32_USB_Device_Library/Core/Src/usbd_core.c \
+			 LIB_STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c \
+			 LIB_STM32_USB_Device_Library/Core/Src/usbd_ioreq.c \
+			 LIB_STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c
+
 # Your header file locations (add -I before path!)
-INCS       = -Isrc
+INCS       = -Isrc \
+
+# Includes for USB CDC
+INCS      += -Isrc/usb_user \
+             -Isrc/LIB_STM32_USB_Device_Library/Class/CDC/Inc \
+             -Isrc/LIB_STM32_USB_Device_Library/Core/Inc
 
 #GDBFLAGS   = 
 
