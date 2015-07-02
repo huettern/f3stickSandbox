@@ -51,7 +51,7 @@ SRCS      += usb_user/usbd_conf.c		\
 			 LIB_STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c
 
 # Your header file locations (add -I before path!)
-INCS       = -Isrc \
+INCS       = -Isrc 
 
 # Includes for USB CDC
 INCS      += -Isrc/usb_user \
