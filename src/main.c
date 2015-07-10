@@ -87,9 +87,9 @@ int main(void)
   while (1)
   {
     GPIOB->ODR ^= GPIO_PIN_0; //toggle pin
-    HAL_Delay (450);
+    HAL_Delay (1000);
     GPIOB->ODR ^= GPIO_PIN_0; //toggle pin
-    HAL_Delay (450);
+    HAL_Delay (500);
   }
 }
 

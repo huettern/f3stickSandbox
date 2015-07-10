@@ -42,13 +42,17 @@ TARGET     = stick
 SRCS       = main.c
 
 # Sourcefiles for USB CDC
-SRCS      += usb_user/usbd_conf.c		\
-			 usb_user/usbd_desc.c 		\
-			 usb_user/USBD_CDC_IF.c     \
-			 LIB_STM32_USB_Device_Library/Core/Src/usbd_core.c \
-			 LIB_STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c \
-			 LIB_STM32_USB_Device_Library/Core/Src/usbd_ioreq.c \
-			 LIB_STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c
+SRCS      += usbd_conf.c		\
+			 usbd_desc.c 		\
+			 USBD_CDC_IF.c     \
+			 usbd_core.c \
+			 usbd_ctlreq.c \
+			 usbd_ioreq.c \
+			 usbd_cdc.c
+
+VPATH 		= ./src/usb_user	\
+			  ./src/LIB_STM32_USB_Device_Library/Core/Src 	\
+			  ./src/LIB_STM32_USB_Device_Library/Class/CDC/Src/
 
 # Your header file locations (add -I before path!)
 INCS       = -Isrc 
@@ -70,7 +74,7 @@ MCU_UC     = STM32F373XC
 ifeq ($(OS),Windows_NT)
 	OCD_DIR     = C:/OpenOCD-0.8.0/share/openocd/scripts
 else
-	OCD_DIR		= /usr/share/openocd/scripts
+	OCD_DIR		= /usr/local/share/openocd/scripts
 endif
 
 CUBE_DIR   = cube
@@ -147,7 +151,7 @@ LDFLAGS    = -Wl,--gc-sections -Wl,-Map=target/$(TARGET).map $(LIBS) -T$(LDSCRIP
 LDFLAGS   += --specs=rdimon.specs -lc -lrdimon
 
 # Source search paths
-VPATH      = ./src
+VPATH     += ./src
 VPATH     += $(CFG_DIR)
 VPATH     += $(HAL_DIR)/Src
 VPATH     += $(DEV_DIR)/Source/
@@ -195,7 +199,7 @@ openocd:
 	$(OCD) -s $(OCD_DIR) $(OCDFLAGS)
 
 program: all
-	$(OCD) -s $(OCD_DIR) $(OCDFLAGS) -c "program target/$(TARGET).elf verify reset"
+	$(OCD) -s $(OCD_DIR) $(OCDFLAGS) -c "program target/$(TARGET).elf verify reset exit"
 
 debug:
 	$(OCD) -s $(OCD_DIR) $(OCDFLAGS) &
